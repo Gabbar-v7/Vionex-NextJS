@@ -1,12 +1,8 @@
 {
-  "name": "vionex-nextjs",
+  "name": "@packages/utilities",
   "module": "index.ts",
   "type": "module",
   "private": true,
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
   "devDependencies": {
     "@types/bun": "latest"
   },
