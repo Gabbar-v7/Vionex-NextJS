@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "next": "bun --bun next dev",
-    "next:build": "bun --bun next build",
-    "next:start": "bun --bun next start",
-    "next:lint": "bun --bun eslint",
+    "web": "bun --bun next dev",
+    "web:build": "bun --bun next build",
+    "web:start": "bun --bun next start",
+    "web:lint": "bun --bun eslint",
     "storybook": "storybook dev -p 6006",
     "storybook:build": "storybook build"
   },
