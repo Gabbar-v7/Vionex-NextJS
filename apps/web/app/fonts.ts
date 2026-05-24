@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
     subsets: ["latin"],
 });
 
-export const fontClassNames = cn(
+export const appFontClasses = cn(
     "antialiased",
     geistSans.variable,
     geistMono.variable,

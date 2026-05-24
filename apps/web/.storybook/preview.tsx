@@ -1,5 +1,5 @@
 import type { Preview } from '@storybook/nextjs-vite'
-import { fontClassNames } from "../app/fonts"
+import { appFontClasses } from "../app/fonts"
 import "../app/globals.css"
 import { useEffect } from 'react'
 
@@ -8,7 +8,7 @@ const preview: Preview = {
     (Story) => {
       useEffect(() => {
         document.body.classList.add(
-          ...fontClassNames
+          ...appFontClasses
             .split(' ')
             .filter(Boolean)
         )
