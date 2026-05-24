@@ -1,15 +1,21 @@
 import type { Preview } from '@storybook/nextjs-vite'
-import { inter, geistSans, geistMono } from "../app/fonts"
-import { cn } from "../lib/utils"
+import { fontClassNames } from "../app/fonts"
 import "../app/globals.css"
+import { useEffect } from 'react'
 
 const preview: Preview = {
   decorators: [
-    (Story) => (
-      <div className={cn("h-full antialiased", inter.variable, geistSans.variable, geistMono.variable, "font-sans")}>
-        <Story />
-      </div>
-    )
+    (Story) => {
+      useEffect(() => {
+        document.body.classList.add(
+          ...fontClassNames
+            .split(' ')
+            .filter(Boolean)
+        )
+      }, [])
+
+      return <Story />
+    }
   ],
   parameters: {
     controls: {
