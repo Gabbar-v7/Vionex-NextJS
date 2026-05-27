@@ -1,9 +1,9 @@
 {
-  "name": "api",
+  "name": "@apps/api",
   "version": "1.0.50",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "bun run --watch src/index.ts"
+    "api:dev": "bun run --watch src/index.ts",
+    "api:test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "@packages/auth": "workspace:*",

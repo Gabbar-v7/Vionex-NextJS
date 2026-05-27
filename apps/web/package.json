@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "web": "bun --bun next dev",
+    "web:dev": "bun --bun next dev",
     "web:build": "bun --bun next build",
     "web:start": "bun --bun next start",
     "web:lint": "bun --bun eslint",
-    "storybook": "storybook dev -p 6006",
+    "storybook:dev": "storybook dev -p 6006",
     "storybook:build": "storybook build"
   },
   "dependencies": {
