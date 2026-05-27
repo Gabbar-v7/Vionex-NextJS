@@ -59,14 +59,14 @@ export default function AppNavbar({ user, navItems }: AppNavbarProps) {
                 {/* ── DESKTOP NAV ── */}
                 <nav className="hidden md:flex items-center gap-0.5">
                     {navItems.map(({ label, href, icon }) => (
-                        <a
+                        <Link
                             key={label}
                             href={href}
                             className="flex items-center gap-1.5 rounded-md px-3 py-1.5 text-sm font-medium transition-colors text-muted-foreground hover:bg-accent hover:text-accent-foreground"
                         >
                             {icon}
                             {label}
-                        </a>
+                        </Link>
                     ))}
                 </nav>
 
@@ -141,7 +141,7 @@ export default function AppNavbar({ user, navItems }: AppNavbarProps) {
                                     Navigation
                                 </p>
                                 {navItems.map(({ label, href, icon }) => (
-                                    <a
+                                    <Link
                                         key={label}
                                         href={href}
                                         onClick={() => { setSheetOpen(false); }}
@@ -149,7 +149,7 @@ export default function AppNavbar({ user, navItems }: AppNavbarProps) {
                                     >
                                         {icon}
                                         {label}
-                                    </a>
+                                    </Link>
                                 ))}
 
                                 <Separator className="my-3" />
