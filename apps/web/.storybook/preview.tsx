@@ -4,6 +4,11 @@ import "../app/globals.css"
 import { useEffect } from 'react'
 
 const preview: Preview = {
+  initialGlobals: {
+    backgrounds: {
+      grid: true
+    },
+  },
   decorators: [
     (Story) => {
       useEffect(() => {
